@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="src/index.css">
+</head>
+<body>
+<div class="use">
+    <div class="left"></div>
+    <div class="right">
+
+    </div>
+</div>
+<div>
+    <input type="checkbox" class="checkbox1" checked>
+</div>
+<div>
+    <input type="checkbox" class="checkbox1">
+</div>
+<script src="src/jquery.js"></script>
+<script src="src/index.js"></script>
+<script>
+    $('.checkbox1').simpleSwitch({
+      size:100,
+      theme:'FlatRadius',
+      callback:function(){
+        console.log(1);
+      }
+    });
+</script>
+</body>
+</html>

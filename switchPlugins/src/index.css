@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    font-size:80px;
+}
+body{
+    font-size:12px;
+}
+.switch,.switch *{
+    -webkit-transition: all 0.2s ease-out 0s;
+    -moz-transition: all 0.2s ease-out 0s;
+    -ms-transition: all 0.2s ease-out 0s;
+    -o-transition: all 0.2s ease-out 0s;
+    transition: all 0.2s ease-out 0s;
+}
+.switch.disabled{
+    opacity:0.5;
+    filter:alpha(opacity=50);
+}
+/*switchFlat样式 start*/
+.switchFlat,.switchFlatRadius,.switchFlatCircle{
+    position:relative;
+    width:1rem;
+    height:0.4rem;
+    display: inline-block;
+    background-color: lightcoral;
+}
+.switchFlat .switchContent,.switchFlatRadius .switchContent,.switchFlatCircle .switchContent{
+    position:relative;
+    width:1rem;
+    height:0.4rem;
+    font-size:0.14rem;
+    font-family: "微软雅黑";
+    color:#fff;
+}
+.switchFlat .switchContent:before,.switchFlatRadius .switchContent:before,.switchFlatCircle .switchContent:before{
+    position:absolute;
+    display:inline-block;
+    content:'ON';
+    left:0.10rem;
+    top:50%;
+    margin-top:-0.13rem;
+}
+.switchFlat .switchContent:after,.switchFlatRadius .switchContent:after,.switchFlatCircle .switchContent:after{
+    position:absolute;
+    display:inline-block;
+    content:'OFF';
+    right:0.10rem;
+    top:50%;
+    margin-top:-0.13rem;
+}
+.switchFlat .switchButton,.switchFlatRadius .switchButton,.switchFlatCircle .switchButton{
+    position:absolute;
+    top:0.05rem;
+    left:0.05rem;
+    width:0.45rem;
+    height:0.3rem;
+    background-color:#ffffff;
+}
+.switchFlat .switchButton:before,.switchFlatRadius .switchButton:before,.switchFlatCircle .switchButton:before{
+    position:absolute;
+    content: '';
+    display:block;
+    width:0.04rem;
+    height:0.16rem;
+    left:0.15rem;
+    top:0.06rem;
+    background-color: lightcoral;
+}
+.switchFlat .switchButton:after,.switchFlatRadius .switchButton:after,.switchFlatCircle .switchButton:after{
+    position:absolute;
+    content: '';
+    display: block;
+    width:0.04rem;
+    height:0.16rem;
+    right:0.15rem;
+    top:0.06rem;
+    background-color: lightcoral;
+}
+.switchFlat.on,.switchFlatRadius.on,.switchFlatCircle.on{
+    background-color: lightskyblue;
+}
+.switchFlat.on .switchButton,.switchFlatRadius.on .switchButton,.switchFlatCircle.on .switchButton{
+    left:0.5rem;
+}
+.switchFlat.on .switchButton:before,.switchFlatRadius.on .switchButton:before,.switchFlatCircle.on .switchButton:before{
+    background-color: lightskyblue;
+}
+.switchFlat.on .switchButton:after,.switchFlatRadius.on .switchButton:after,.switchFlatCircle.on .switchButton:after{
+    background-color: lightskyblue;
+}
+/*switchFlat样式 end*/
+
+/*switchFlatRadius样式 start*/
+.switchFlatRadius{
+    border-radius: 0.05rem;
+}
+.switchFlatRadius .switchButton{
+    border-radius:0.05rem;
+}
+/*switchFlatRadius样式 end*/
+.switchFlatCircle{
+    border-radius: 0.2rem;
+}
+.switchFlatCircle .switchButton{
+    border-radius:0.2rem;
+}
+
